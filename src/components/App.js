@@ -2,9 +2,11 @@ import React from 'react'
 import '../styles/App.css';
 import {useSelector,useDispatch} from "react-redux";
 import { incNumber,decNumber } from '../actions/index.js';
+
+
 const App = () => {
 const myState = useSelector((state)=>state.changeTheNumber);
-const dispatch =useDispatch();
+const dispatch = useDispatch();
 
   return (
     <div id="main">
